@@ -1,0 +1,65 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "06e19ca6bcc8a3e4b04bca087ab772c2",
+    "packages": [
+        {
+            "name": "nickswalker/neuegal",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nickswalker/neuegal.git",
+                "reference": "aea7b233cbe752a2228601c286d313b4a08d796a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nickswalker/neuegal/zipball/aea7b233cbe752a2228601c286d313b4a08d796a",
+                "reference": "aea7b233cbe752a2228601c286d313b4a08d796a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nickswalker\\NeueGal\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nick Walker",
+                    "email": "nick@nickwalker.us",
+                    "homepage": "http://nickwalker.us",
+                    "role": "Creator"
+                }
+            ],
+            "description": "Simple, file-system based image gallery.",
+            "homepage": "http://github.com/nickswalker/neuegal",
+            "keywords": [
+                "Thumbnails",
+                "cache",
+                "gallery",
+                "themeable"
+            ],
+            "time": "2015-01-23 19:20:30"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "nickswalker/neuegal": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
