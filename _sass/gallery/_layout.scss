@@ -12,6 +12,11 @@ body {
 
 }
 
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .gallery {
   display: flex;
   justify-content: space-between;
@@ -115,8 +120,8 @@ figure:hover {
   box-shadow: none !important;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   figure {
-    flex: 0 1 200px;
+    flex: 1 1 200px;
   }
 }
