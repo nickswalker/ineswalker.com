@@ -1,0 +1,122 @@
+/* =Baseline
+-------------------------------------------------------------- */
+
+body {
+  margin: 0;
+  font-size: 16px;
+  background: #999;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  width: 100%;
+  line-height: 24px;
+
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  flex-flow: row wrap;
+  padding: 12px;
+}
+
+a {
+  color: black;
+}
+
+/* = Sections
+-------------------------------------------------------------- */
+
+section {
+  position: relative;
+  height: auto;
+  padding: 0;
+  margin-bottom: 24px;
+  overflow: auto;
+}
+
+/*--- = About */
+footer {
+  display: flex;
+  margin: 0 24px;
+  margin-bottom: 24px;
+  overflow: auto;
+  color: white !important;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 24px;
+  background: url("/assets/images/icon.svg");
+  opacity: .8;
+}
+
+footer div {
+  display: block;
+  border-box: border-box;
+}
+
+footer a {
+  text-decoration: none;
+  color: white !important;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* = Images
+-------------------------------------------------------------- */
+
+figure {
+  flex: 0 1 calc(50% - 24px);
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 12px;
+  transition: opacity 0.2s;
+}
+
+figure a {
+  display: block;
+}
+
+figure img {
+  z-index: 2;
+  width: 100%;
+}
+
+figure:hover {
+  opacity: 0.8;
+}
+
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none !important;
+}
+
+@media (min-width: 900px) {
+  figure {
+    flex: 0 1 200px;
+  }
+}

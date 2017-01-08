@@ -1,0 +1,30 @@
+title: Ines Walker
+email: ineslwalker@icloud.com
+description: > # this means to ignore newlines until "baseurl:"
+  Ines Walker is a ceramic designer based in El Paso, Texas.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ineswalker.com" # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: "UA-53439622-1"
+# Custom collections
+collections:
+  pieces:
+    output: true
+
+
+defaults:
+  - scope:
+      path: ""
+      type: pieces
+    values:
+      layout: piece
+      featured: true
+      thumbnail_name: false
+      image_name: false
+
+
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="home">
+    <section class="gallery">
+        {% for piece in site.pieces %}
+        <figure>
+            {% if piece.image_name %}
+            {% assign image_name = piece.image_name | slugify | append: ".jpg" %}
+            {% else %}
+            {% assign image_name = piece.title | slugify | append: ".jpg" %}
+            {% endif %}
+            {% if piece.thumbnail_name %}
+            {% assign thumbnail_name = piece.thumbnail_name | slugify | append: ".jpg" %}
+            {% else %}
+            {% assign thumbnail_name = image_name %}
+            {% endif %}
+            <a rel="group" data-description="{{piece.description}}" class="fancybox"
+               href="/assets/images/pieces/{{image_name}}">
+                <img src="/assets/images/pieces/thumbnails/{{thumbnail_name}}" alt="{{piece.title}}"/>
+            </a>
+        </figure>
+        {% endfor %}
+    </section>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.gallery a').fancybox({
+            afterLoad: function () {
+                var description = $(this.element).attr('data-description');
+                if (description != '') {
+                    this.title = this.title + " – " + $(this.element).attr('data-description');
+                }
+            },
+            padding: 0,
+            openEffect: 'fade',
+            closeEffect: 'fade',
+            prevEffect: 'fade',
+            nextEffect: 'fade',
+            loop: false,
+            closeBtn: false
+
+        });
+    });
+</script>
